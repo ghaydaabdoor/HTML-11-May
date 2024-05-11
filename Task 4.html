@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise #3 - Registration Form</title>
+    <style>
+       div{
+        text-align: center;
+        margin:20px auto 20px auto;
+       }
+       #C2{
+        margin:4px auto;
+       }
+       #em{
+        translate: -9px 0px;
+       }
+       .field{
+        width:350px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:lightyellow;
+       }
+       h2{
+        text-align:center ;
+       }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+<form>
+<fieldset class="field">
+        <legend>Personal Details</legend>
+        <div> <label for="first">First Name</label>
+        <input type="text" id="first"> </div>
+
+        <div> <label for="last">Last Name</label>
+        <input type="text" id="last"> </div>
+
+        <div id="em"> <label for="email">Email address</label>
+        <input type="email" id="email"> </div>
+
+        <div>
+            <span>Gender</span>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+</fieldset>
+
+<fieldset class="field">
+        <legend>City</legend>
+        <div id="C2"> <label for="city">City</label>
+        <select name="city" id="city">
+
+        <optgroup label="North">
+            <option value="Irb">Irbid</option>
+            <option value="Jer">Jerash</option>
+            <option value="Ajl">Ajloun</option>
+            <option value="Maf">Mafraq</option>
+        </optgroup>
+
+        <optgroup label="central">
+            <option selected value="Amm">Amman</option>
+            <option value="Zaq">Zarqa</option>
+            <option value="Bal">Balqa</option>
+            <option value="Mad">Madaba</option>
+        </optgroup>
+
+        <optgroup label="South">
+            <option value="Ma'an">Ma'an</option>
+            <option value="Aqa">Aqaba</option>
+            <option value="Kar">Karak</option>
+            <option value="Taf">Tafila</option>
+        </optgroup>
+
+        </select>
+        </div>
+</fieldset>
+
+   <div> <button id="but">Subscribe</button> </div>
+
+</form>
+
+</body>
+</html>
